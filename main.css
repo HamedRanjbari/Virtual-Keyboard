@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #333;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    font-weight: 500;
+    color: antiquewhite;
+}
+/* input */
+#input{
+    background-color: rgba(212, 212, 212, 0.5);
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 2rem;
+    caret-color: rgb(163, 0, 52);
+    border: 0;
+    padding: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#input:focus{
+    outline: 0;
+}
+i{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+/* keyboard */
+.keyboard{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.row{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    align-items: center;
+    margin: 1rem 0;
+}
+.row li{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.8) 0px 30px 60px -30px,
+    rgba(0, 0, 0, 0.8) 0px -2px 6px 0px inset;
+    margin: .1rem .5rem;
+    cursor: pointer;
+}
+/* buttons style */
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.sp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 50px;
+}
+.backspace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+}
+.enter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 50px;
+}
+.shift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    height: 50px;
+}
+.space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 50px;
+}
+/* animation */
+.tap {
+    -webkit-animation: tap 0.4s cubic-bezier(0.4, 0.6, 0.7, 1) both;
+    animation: tap 0.4s cubic-bezier(0.4, 0.6, 0.7, 1) both;
+}
+
+@keyframes tap {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        color: rgb(79, 0, 18);
+        background-color: rgb(255, 124, 159);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
